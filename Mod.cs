@@ -17,13 +17,18 @@ namespace ModTemp
 		void Start()
 		{
 			new Harmony(modId).PatchAll(Assembly.GetExecutingAssembly());
-		}
+        }
 
-		void Update()
-		{
+        void Update()
+        {
 
-		}
-	}
+        }
+
+        void OnGUI()
+        {
+
+        }
+    }
 
 	[HarmonyPatch]
 	public class Patches
